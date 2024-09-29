@@ -20,14 +20,16 @@ function App() {
       
       
       <header className="App-header">
+
       {isMapVisible && <Maps />}
+        
       
        
           
       
         
 
-      <p className = "Para"> Display optimal locations for new pogo locations</p>
+      <p className = "Para"> Display optimal locations for new POGOH locations</p>
       <form>
         
         
@@ -37,7 +39,23 @@ function App() {
       </button>
 
       <FileUpload />
+    {isMapVisible &&
+      <div>
+          <img
+          src="bikeUsageImage.png"
+          
+          style = {{width: '60%', height: 'auto', marginRight: '20px', marginTop: '40px' }} 
+          />
+          <img 
+              src="busStopsImage.png"
+              
+              style={{ width: '60%', height: 'auto' , marginRight: '20px', marginTop: '20px'}} 
+            />
+        {isMapVisible}
       
+      </div>
+      
+    }
       </header>
       
 
