@@ -10,11 +10,37 @@ const center = {
     lat: 40.4406,
     lng: -79.9759,  
 };
+/*
+async function fetchStations()
+{
+    const response = await fetch('bikeStationLoc.csv');
+    const text = await response.text();
+    return text.split("\n");
+}
+
+const stations = await fetchStations();
+
+for (int i = 1; i < station.length; i++) {
+    var cols = station[i].split(',');
+    var pos = new google.maps.LatLng(cols[4], cols[5]);
+    station = new Marker(
+        {
+            map,
+            position: pos
+        }
+    )
+}
+    */
 
 const position = [
-    { lat: 40.4406, lng: -79.9959 },
-    { lat: 40.4449, lng: -79.9584 },
-    { lat: 40.4290, lng: -79.9806 },
+    { lat: 40.4526, lng: -80.0529 },
+    { lat: 40.4381, lng: -79.9235 },
+    { lat: 40.4344, lng: -79.9519 },
+    { lat: 40.4416, lng: -79.9558 },
+    { lat: 40.438, lng: -79.9537 },
+    { lat: 40.439, lng: -79.9603},
+    { lat: 40.4513, lng: -79.953 },
+    
 ];
 
 const Maps = () => {
