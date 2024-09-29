@@ -1,23 +1,47 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Header';
+import Maps from './components/Maps';
+import { useState} from 'react';
+import FileUpload from './components/FileUpload';
 
 function App() {
+
+  const[isMapVisible, setIsMapVisible] = useState(false);
+
+  const toggleMapVisibility = () => {
+    setIsMapVisible(prevState => !prevState);
+  };
+
   return (
     <div className="App">
+      <Header />
+
+      
+      
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      {isMapVisible && <Maps />}
+      
+       
+          
+      
+        
+
+      <p className = "Para"> Display optimal locations for new pogo locations</p>
+      <form>
+        
+        
+      </form>
+      <button className="MyButton" onClick={toggleMapVisibility}>
+         Generate
+      </button>
+
+      <FileUpload />
+      
       </header>
+      
+
+      
     </div>
   );
 }
