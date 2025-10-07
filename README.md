@@ -5,6 +5,9 @@ SteelHacks Fall 2024
 Team Members: 
 Jessica Hsin (jeh339@pitt.edu), Jason Xie (jxx2@pitt.edu), David Shi (dzs19@pitt.edu), Aidan Van't Hof (alv115@pitt.edu)
 
+## Check Out the Devpost and Video Here!
+https://devpost.com/software/asdf-egy4h2
+
 ## Description
 
 This project aims to identify optimal locations for new bike stations in a city by analyzing existing bike rack ridership data and bus stop ridership data. The analysis leverages Python libraries like Pandas, NumPy, Matplotlib, and Seaborn.
